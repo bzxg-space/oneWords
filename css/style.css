@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 2px;
+}
+
+article {
+	width: 99%;
+	max-width: 1000px;
+	min-width: 300px;
+	margin: 0px auto;
+	font-family: "微软雅黑", arial;
+	border-radius: 5px;
+	border: solid 1px grey;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	box-shadow: 5px 5px 5px rgb(136, 136, 136, 0.5);
+}
+
+header {
+	text-align: center;
+	height: 50px;
+	font-weight: normal;
+	line-height: 50px;
+	letter-spacing: 0.2em;
+	text-shadow: 5px 5px 3px rgb(0, 0, 0, 0.5);
+}
+
+nav {
+	width: 95%;
+	padding: 8px;
+	margin: 10px auto;
+	background: #00a4ff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 6px rgb(0, 164, 255, 0.5);
+}
+
+nav ul li {
+	float: left;
+	width: 25%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	list-style-type: none;
+	color: white;
+	border-bottom: solid 2px #00a4ff;
+	letter-spacing: 0.2em;
+}
+
+li:hover {
+	background: #1AAF5D;
+}
+
+.active {
+	border: none;
+	border-bottom: solid 2px #8800ff;
+}
+
+section {
+	width: 90%;
+	height: 350px;
+	margin: 30px auto 0px;
+	position: relative;
+	border: solid 1px gray;
+}
+
+section button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px 8px;
+	border: none;
+	color: white;
+	background: #FF69B4;
+	display: block;
+	font-size: 14px;
+}
+
+section div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	width: 95%;
+	line-height: 28px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	border-bottom: solid 1px gray;
+}
+
+article>button {
+	display: block;
+	width: 145px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	background: #FF69B4;
+	margin: 10px auto 20px;
+}
+
+footer {
+	height: 30px;
+	color: darkgray;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 20px;
+	letter-spacing: 0.12em;
+}
+
+@media (max-width:420px) {
+	article {
+		width: 96%;
+	}
+
+	nav {
+		width: 90%;
+	}
+}
