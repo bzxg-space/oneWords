@@ -3,8 +3,19 @@
 	margin: 0;
 }
 
+/* 字体 by http://www.fonts.net.cn/font-32030420746.html */
+@font-face {
+	font-family: '站酷快乐体';
+	src: url('../fonts/站酷快乐体.ttf');
+}
+
 body {
 	padding: 2px;
+}
+
+button {
+	font-family: "站酷快乐体";
+	letter-spacing: 0.15em;
 }
 
 article {
@@ -12,7 +23,8 @@ article {
 	max-width: 1000px;
 	min-width: 300px;
 	margin: 0px auto;
-	font-family: "微软雅黑", arial;
+	/* font-family: "微软雅黑", arial; */
+	font-family: "站酷快乐体";
 	border-radius: 5px;
 	border: solid 1px grey;
 	position: fixed;
@@ -99,6 +111,7 @@ section div {
 	letter-spacing: 0.2em;
 	text-align: center;
 	border-bottom: solid 1px gray;
+	/* font-family: "站酷快乐体"; */
 }
 
 article>button {
