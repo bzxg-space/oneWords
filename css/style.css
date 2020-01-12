@@ -28,9 +28,9 @@ article {
 
 header {
 	text-align: center;
-	height: 50px;
+	height: 40px;
 	font-weight: normal;
-	line-height: 50px;
+	line-height: 40px;
 	letter-spacing: 0.2em;
 	text-shadow: 5px 5px 3px rgb(0, 0, 0, 0.5);
 }
@@ -112,7 +112,7 @@ article>button {
 	border: none;
 	border-radius: 20px;
 	background: #FF69B4;
-	margin: 10px auto 20px;
+	margin: 10px auto;
 }
 
 footer {
@@ -121,7 +121,7 @@ footer {
 	line-height: 30px;
 	text-align: center;
 	font-size: 12px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	letter-spacing: 0.12em;
 }
 
@@ -132,5 +132,52 @@ footer {
 
 	nav {
 		width: 90%;
+	}
+}
+
+@media (max-height:780px) {
+	header {
+		height: 30px;
+		line-height: 30px;
+	}
+
+	nav {
+		margin: 5px auto 0px;
+	}
+
+	article {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		margin: 5px auto;
+	}
+
+	section {
+		height: 320px;
+		margin: 10px auto 0px
+	}
+
+	article>button {
+		margin: 10px auto;
+		width: 125px;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	footer {
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+	nav ul li {
+		height: 30px;
+		line-height: 30px;
 	}
 }
