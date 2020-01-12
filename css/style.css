@@ -35,7 +35,12 @@ article {
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-	box-shadow: 5px 5px 5px rgb(136, 136, 136, 0.5);
+	box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-moz-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-ms-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	-o-box-shadow: 5px 5px 5px rgba(136, 136, 136, 0.5);
+	filter: progid:DXImageTransform.Microsoft.Shadow(Color='rgba(136, 136, 136, 0.5)', Direction='135', Strength='5');
 }
 
 header {
@@ -44,7 +49,13 @@ header {
 	font-weight: normal;
 	line-height: 40px;
 	letter-spacing: 0.2em;
-	text-shadow: 5px 5px 3px rgb(0, 0, 0, 0.5);
+	text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	/* -webkit-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5); */
+	-moz-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	-ms-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	-o-text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+	filter: Shadow(Color='rgba(0, 0, 0, 0.5)', Direction='135', Strength='3');
+	filter: dropshadow(OffX=5, OffY=5, Color='rgba(0, 0, 0, 0.5)', Positive='true');
 }
 
 nav {
@@ -148,7 +159,8 @@ footer {
 	}
 }
 
-@media (max-height:625px) {
+/* 625px */
+@media (max-height:645px) {
 	header {
 		height: 30px;
 		line-height: 30px;
