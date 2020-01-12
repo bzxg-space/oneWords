@@ -135,7 +135,7 @@ footer {
 	}
 }
 
-@media (max-height:780px) {
+@media (max-height:625px) {
 	header {
 		height: 30px;
 		line-height: 30px;
